@@ -113,7 +113,7 @@
         <a class="text text48 gray" href="#"><p>Under a Flowing Field</p></a>
         <a class="text text49 gray" href="#"><p>Home Stories Chronological List</p></a>
         <a class="text text50 gray" href="#"><p>section4 Home Stories</p></a>
-        <a class="text text51 gray" href="#"><p>제작 중..</p></a>
+        <a class="text text51 gray" href="#"><p>Door Hanger</p></a>
       </div>
       <!-- 텍스트 -->
 
@@ -951,23 +951,116 @@
         </div>
       </div>
 
+      <div class="modal" id="door_hanger">
+        <div class="inner">
+          <div class="all-modal base-modal">
+            <img class="hanger-center" src="./img/door_hanger_center.svg" alt="" />
+            <picture class="temp_bg">
+              <source media="(max-width: 720px)" srcset="./img/door_hanger_bg_mo.png" />
+              <img src="./img/door_hanger_bg.png" alt="" />
+            </picture>
+            <div class="contents">
+              <div class="swiper">
+                <div class="swiper-inner">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <picture>
+                        <source media="(max-width: 720px)" srcset="./img/door_hanger_mo1.png" />
+                        <img src="./img/door_hanger1.png" alt="" />
+                      </picture>
+                    </div>
+                    <div class="swiper-slide">
+                      <picture>
+                        <source media="(max-width: 720px)" srcset="./img/door_hanger_mo2.png" />
+                        <img src="./img/door_hanger2.png" alt="" />
+                      </picture>
+                    </div>
+                    <div class="swiper-slide">
+                      <picture>
+                        <source media="(max-width: 720px)" srcset="./img/door_hanger_mo3.png" />
+                        <img src="./img/door_hanger3.png" alt="" />
+                      </picture>
+                    </div>
+                    <div class="swiper-slide">
+                      <picture>
+                        <source media="(max-width: 720px)" srcset="./img/door_hanger_mo4.png" />
+                        <img src="./img/door_hanger4.png" alt="" />
+                      </picture>
+                    </div>
+                    <div class="swiper-slide">
+                      <picture>
+                        <source media="(max-width: 720px)" srcset="./img/door_hanger_mo5.png" />
+                        <img src="./img/door_hanger5.png" alt="" />
+                      </picture>
+                    </div>
+                    <div class="swiper-slide">
+                      <picture>
+                        <source media="(max-width: 720px)" srcset="./img/door_hanger_mo6.png" />
+                        <img src="./img/door_hanger6.png" alt="" />
+                      </picture>
+                    </div>
+                    <div class="swiper-slide">
+                      <picture>
+                        <source media="(max-width: 720px)" srcset="./img/door_hanger_mo7.png" />
+                        <img src="./img/door_hanger7.png" alt="" />
+                      </picture>
+                    </div>
+                    <div class="swiper-slide">
+                      <picture>
+                        <source media="(max-width: 720px)" srcset="./img/door_hanger_mo8.png" />
+                        <img src="./img/door_hanger8.png" alt="" />
+                      </picture>
+                    </div>
+                    <div class="swiper-slide">
+                      <picture>
+                        <source media="(max-width: 720px)" srcset="./img/door_hanger_mo9.png" />
+                        <img src="./img/door_hanger9.png" alt="" />
+                      </picture>
+                    </div>
+                    <div class="swiper-slide">
+                      <picture>
+                        <source media="(max-width: 720px)" srcset="./img/door_hanger_mo10.png" />
+                        <img src="./img/door_hanger10.png" alt="" />
+                      </picture>
+                    </div>
+                    <div class="swiper-slide">
+                      <picture>
+                        <source media="(max-width: 720px)" srcset="./img/door_hanger_mo11.png" />
+                        <img src="./img/door_hanger11.png" alt="" />
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="btn_zoom"><img src="./img/plus_ptn.svg" /></button>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"><img src="./img/arrow_prev_btn_yellow.svg" /></div>
+                <div class="swiper-button-next"><img src="./img/arrow_next_btn_yellow.svg" /></div>
+              </div>
+            </div>
+            <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+
       <script>
+        let underAFlowingFieldSwiper, section4HomeStoriesSwiper, doorHangerSwiper;
+
         var players = []; // 플레이어 객체를 담을 배열
 
         function onYouTubeIframeAPIReady() {
           // 플레이어 객체를 배열에 추가
-          players.push(new YT.Player("player1", { height: "", width: "", videoId: "eKqa-866j28" }));
-          players.push(new YT.Player("player2", { height: "", width: "", videoId: "ejOBSXYgf6Q" }));
-          players.push(new YT.Player("player3", { height: "", width: "", videoId: "699spYeOEs8" }));
-          players.push(new YT.Player("player4", { height: "", width: "", videoId: "TsiFS-D5sC4" }));
-          players.push(new YT.Player("player5", { height: "", width: "", videoId: "3q1wQHlTyYo" }));
-          players.push(new YT.Player("player6", { height: "", width: "", videoId: "Z1g-1keW8JM" }));
-          players.push(new YT.Player("player7", { height: "", width: "", videoId: "IhFu7J383-k" }));
-          players.push(new YT.Player("player8", { height: "", width: "", videoId: "wNdIExYoAV0" }));
-          players.push(new YT.Player("player9", { height: "", width: "", videoId: "FwY73fobvjA" }));
-          players.push(new YT.Player("player10", { height: "", width: "", videoId: "_1N8PFSCbPc" }));
-          players.push(new YT.Player("player11", { height: "", width: "", videoId: "xRqPBkklonM" }));
-          players.push(new YT.Player("player12", { height: "", width: "", videoId: "tnwM9Pe_6NQ" }));
+          players.push(new YT.Player("player1", {height: "", width: "", videoId: "eKqa-866j28"}));
+          players.push(new YT.Player("player2", {height: "", width: "", videoId: "ejOBSXYgf6Q"}));
+          players.push(new YT.Player("player3", {height: "", width: "", videoId: "699spYeOEs8"}));
+          players.push(new YT.Player("player4", {height: "", width: "", videoId: "TsiFS-D5sC4"}));
+          players.push(new YT.Player("player5", {height: "", width: "", videoId: "3q1wQHlTyYo"}));
+          players.push(new YT.Player("player6", {height: "", width: "", videoId: "Z1g-1keW8JM"}));
+          players.push(new YT.Player("player7", {height: "", width: "", videoId: "IhFu7J383-k"}));
+          players.push(new YT.Player("player8", {height: "", width: "", videoId: "wNdIExYoAV0"}));
+          players.push(new YT.Player("player9", {height: "", width: "", videoId: "FwY73fobvjA"}));
+          players.push(new YT.Player("player10", {height: "", width: "", videoId: "_1N8PFSCbPc"}));
+          players.push(new YT.Player("player11", {height: "", width: "", videoId: "xRqPBkklonM"}));
+          players.push(new YT.Player("player12", {height: "", width: "", videoId: "tnwM9Pe_6NQ"}));
           // 필요한 만큼 플레이어 객체를 추가할 수 있습니다.
 
           // 플레이어 객체가 모두 준비되면 호출될 콜백 함수
@@ -1003,10 +1096,13 @@
           });
         }
         function playVideo(videoIndex) {
+          conosl.loe("playVideo");
           players[videoIndex].playVideo();
         }
 
         function pauseVideo(videoIndex) {
+          conosl.loe("pauseVideo");
+
           players[videoIndex].pauseVideo();
         }
         function pauseAllVideos() {
@@ -1019,6 +1115,164 @@
           for (var i = 0; i < players.length; i++) {
             players[i].seekTo(0);
           }
+        }
+
+        function initUnderAFlowingField() {
+          const $modal = $("#under_a_flowing_field");
+          if (underAFlowingFieldSwiper) {
+            underAFlowingFieldSwiper.slideTo(0);
+          } else {
+            underAFlowingFieldSwiper = new Swiper("#under_a_flowing_field .swiper-inner", {
+              observer: true,
+              observeParents: true,
+              pagination: {
+                el: "#under_a_flowing_field .swiper-pagination",
+                clickable: true
+              },
+              navigation: {
+                nextEl: "#under_a_flowing_field .swiper-button-next",
+                prevEl: "#under_a_flowing_field .swiper-button-prev"
+              }
+            });
+          }
+
+          $("#mask").addClass("active");
+          $modal.removeClass("zoom").addClass("active");
+
+          $modal.find(".btn_zoom").click(() => {
+            $modal
+              .addClass("zoom")
+              .find(".zoom-modal")
+              .show()
+              .find(".zoom-img")
+              .attr("src", `./img/under_a_flowing_field${underAFlowingFieldSwiper.realIndex + 1}.png`);
+          });
+          $modal.find(".zoom_close_btn").click(() => {
+            $modal.removeClass("zoom");
+          });
+        }
+        function initHomeStoriesChronological() {
+          const $modal = $("#home_stories_chronological");
+          const $flowTxt = $modal.find(".flow-text");
+
+          $("#mask").addClass("active");
+          $modal.removeClass("zoom").addClass("active");
+          $flowTxt.removeClass("pause");
+
+          $modal.find(".btn_pause").click(() => {
+            $flowTxt.addClass("pause");
+          });
+          $modal.find(".btn_play").click(() => {
+            $flowTxt.removeClass("pause");
+          });
+          $modal.find(".btn_zoom").click(() => {
+            $modal.find(".os-viewport").scrollLeft(0);
+            $modal.addClass("zoom");
+          });
+          $modal.find(".zoom_close_btn").click(() => {
+            $modal.removeClass("zoom");
+          });
+        }
+        function initSection4HomeStories() {
+          const $modal = $("#section4_home_stories");
+          if (section4HomeStoriesSwiper) {
+            section4HomeStoriesSwiper.slideTo(0);
+          } else {
+            section4HomeStoriesSwiper = new Swiper("#section4_home_stories .swiper-inner", {
+              observer: true,
+              observeParents: true,
+              pagination: {
+                el: "#section4_home_stories .swiper-pagination",
+                clickable: true
+              },
+              navigation: {
+                nextEl: "#section4_home_stories .swiper-button-next",
+                prevEl: "#section4_home_stories .swiper-button-prev"
+              }
+            });
+          }
+
+          $("#mask").addClass("active");
+          $modal.removeClass("zoom").addClass("active");
+
+          $modal.find(".btn_zoom").click(() => {
+            $modal
+              .addClass("zoom")
+              .find(".zoom-modal")
+              .show()
+              .find(".zoom-img")
+              .attr("src", `./img/section4_home_stories${section4HomeStoriesSwiper.realIndex + 1}.png`);
+          });
+          $modal.find(".zoom_close_btn").click(() => {
+            $modal.removeClass("zoom");
+          });
+        }
+        function inigDoorHanger() {
+          const $modal = $("#door_hanger");
+          var settings = {
+            speed: 1800,
+            observer: true,
+            observeParents: true,
+            preventInteractionOnTransition: true,
+            effect: "creative",
+            creativeEffect: {
+              prev: {
+                translate: [0, 0, -1]
+              },
+              next: {
+                translate: [0, 0, 0]
+              }
+            },
+            pagination: {
+              el: "#door_hanger .swiper-pagination",
+              clickable: true,
+              renderBullet: function (index, className) {
+                return `<span class="${className}"><img src="./img/pager${index + 1}.svg" class="normal" /><img src="./img/pager${index + 1}_active.svg" class="active" /></span>`;
+              }
+            },
+            navigation: {
+              nextEl: "#door_hanger .swiper-button-next",
+              prevEl: "#door_hanger .swiper-button-prev"
+            },
+            on: {
+              slideNextTransitionStart: (swiper) => {
+                $modal.find(".swiper-slide").removeClass("next next-current prev prev-current");
+                $modal.find(".swiper-slide").eq(swiper.realIndex).addClass("next");
+                $modal
+                  .find(".swiper-slide")
+                  .eq(swiper.realIndex - 1)
+                  .addClass("next-current");
+              },
+              slideNextTransitionEnd: (swiper) => {
+                $modal.find(".swiper-slide").removeClass("next");
+                $modal
+                  .find(".swiper-slide")
+                  .eq(swiper.realIndex - 1)
+                  .removeClass("next-current");
+              },
+              slidePrevTransitionStart: (swiper) => {
+                $modal.find(".swiper-slide").removeClass("next next-current prev prev-current");
+                $modal.find(".swiper-slide").eq(swiper.realIndex).addClass("prev");
+                $modal
+                  .find(".swiper-slide")
+                  .eq(swiper.realIndex + 1)
+                  .addClass("prev-current");
+              },
+              slidePrevTransitionEnd: (swiper) => {
+                $modal.find(".swiper-slide").eq(swiper.realIndex).removeClass("prev");
+                $modal
+                  .find(".swiper-slide")
+                  .eq(swiper.realIndex + 1)
+                  .removeClass("prev-current");
+              }
+            }
+          };
+
+          if (doorHangerSwiper) doorHangerSwiper.destroy();
+          doorHangerSwiper = new Swiper("#door_hanger .swiper-inner", settings);
+
+          $("#mask").addClass("active");
+          $modal.addClass("active");
         }
       </script>
     </div>

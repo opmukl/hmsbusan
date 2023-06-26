@@ -80,7 +80,6 @@
   overflow: hidden;
 }
 .swiper .swiper-inner {
-  background: #fff;
   overflow: hidden;
 }
 .swiper .swiper-slide {
@@ -106,8 +105,7 @@
   bottom: 8.28%;
 }
 .swiper .swiper-pagination-bullet {
-  border-radius: 0; /* width: 7px; 
- height: 7px; */
+  border-radius: 0;
   --swiper-pagination-bullet-horizontal-gap: 0.5%;
   --swiper-pagination-bullet-inactive-color: transparent;
   border: 1.5px solid #000;
@@ -781,6 +779,118 @@
   }
 }
 
+/* door_hanger */
+.modal#door_hanger {
+  width: 390px;
+}
+.modal#door_hanger .hanger-center {
+  position: absolute;
+  top: 14%;
+  left: 50%;
+  width: 47%;
+  transform: translate(-50%, 0%);
+  z-index: 100;
+}
+
+.modal#door_hanger .temp_bg img {
+  width: 100%;
+}
+.modal#door_hanger .contents {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+.modal#door_hanger .swiper .swiper-inner {
+  height: 100%;
+}
+.modal#door_hanger .swiper .swiper-slide {
+  padding: 11.56% 6.28%;
+}
+.modal#door_hanger .swiper .swiper-slide img {
+  transform-origin: center 21.5%;
+  transition: 2s transform, 1s opacity;
+  opacity: 0;
+}
+.modal#door_hanger .swiper .swiper-slide.next-current img {
+  animation: rotate-out-left 1s cubic-bezier(0.4, 0, 0.2, 1);
+  animation-fill-mode: forwards;
+  transition: 2s transform, 1s opacity;
+}
+.modal#door_hanger .swiper .swiper-slide.next img {
+  animation: rotate-in-right 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  animation-delay: 0.8s;
+  animation-fill-mode: backwards;
+  transition: 2s transform, 0.5s opacity;
+}
+.modal#door_hanger .swiper .swiper-slide.prev-current img {
+  animation: rotate-out-right 1s cubic-bezier(0.4, 0, 0.2, 1);
+  animation-fill-mode: forwards;
+  transition: 2s transform, 1s opacity;
+}
+.modal#door_hanger .swiper .swiper-slide.prev img {
+  animation: rotate-in-left 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  animation-delay: 0.8s;
+  animation-fill-mode: backwards;
+  transition: 2s transform, 0.5s opacity;
+}
+.modal#door_hanger .swiper .swiper-slide-active img {
+  opacity: 1;
+  transform: rotate(0);
+  transition: opacity 0s;
+}
+.modal#door_hanger .swiper .swiper-button-prev {
+  left: 5.29%;
+}
+.modal#door_hanger .swiper .swiper-button-next {
+  right: 5.29%;
+}
+.modal#door_hanger .swiper .swiper-button-prev,
+.modal#door_hanger .swiper .swiper-button-next {
+  width: 4.8%;
+}
+.modal#door_hanger .swiper .swiper-pagination.swiper-pagination-bullets {
+  bottom: 4.3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal#door_hanger .swiper .swiper-pagination-bullet {
+  width: auto;
+  height: auto;
+  border: 0;
+  background: none;
+  vertical-align: middle;
+}
+.modal#door_hanger .swiper .swiper-pagination-bullet img {
+  width: 16px;
+}
+.modal#door_hanger .swiper .swiper-pagination-bullet .active,
+.modal#door_hanger .swiper .swiper-pagination-bullet-active .normal {
+  display: none;
+}
+.modal#door_hanger .swiper .swiper-pagination-bullet-active .active {
+  display: block;
+  width: 20px;
+  margin-top: 2px;
+}
+@media screen and (max-width: 720px) {
+  .modal#door_hanger .hanger-center {
+    top: 14.83%;
+    width: 48.49%;
+  }
+  .modal#door_hanger .swiper .swiper-slide {
+    padding: 4.41% 5.35%;
+  }
+  .modal#door_hanger .swiper .swiper-slide img {
+    transform-origin: center 28.73%;
+  }
+  .modal#door_hanger .swiper .swiper-pagination-bullet {
+    visibility: hidden;
+  }
+}
 /* 공통 CSS */
 
 /* 유튜브 공통 CSS */
@@ -924,5 +1034,61 @@
   }
   100% {
     background-position: 600% center;
+  }
+}
+
+@keyframes rotate-in-left {
+  0% {
+    transform: rotate(180deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+@keyframes rotate-in-right {
+  0% {
+    transform: rotate(-180deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+@keyframes rotate-out-right {
+  0% {
+    transform: rotate(0);
+    opacity: 1;
+  }
+  90% {
+    /* transform: rotate(0); */
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-180deg);
+    opacity: 0;
+  }
+}
+
+@keyframes rotate-out-left {
+  0% {
+    transform: rotate(0);
+    opacity: 1;
+  }
+  90% {
+    /* transform: rotate(0); */
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(180deg);
+    opacity: 0;
   }
 }
