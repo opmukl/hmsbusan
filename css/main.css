@@ -106,15 +106,13 @@
   bottom: 8.28%;
 }
 .swiper .swiper-pagination-bullet {
-  border-radius: 0;
-  /* width: 7px;
-  height: 7px; */
+  border-radius: 0; /* width: 7px; 
+ height: 7px; */
   --swiper-pagination-bullet-horizontal-gap: 0.5%;
   --swiper-pagination-bullet-inactive-color: transparent;
   border: 1.5px solid #000;
   --swiper-pagination-color: #000;
-  --swiper-pagination-bullet-inactive-opacity: 1;
-  /* box-sizing: border-box; */
+  --swiper-pagination-bullet-inactive-opacity: 1; /* box-sizing: border-box; */
 }
 .swiper .swiper-pagination-bullet.active {
 }
@@ -228,7 +226,7 @@
   height: 65% !important;
 }
 
-/* IKEA  */
+/* IKEA */
 .modal#ikea .title_img {
   top: 9%;
 }
