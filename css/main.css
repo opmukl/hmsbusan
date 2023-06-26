@@ -1,0 +1,242 @@
+.wrap{width: 100%; height: 100%; }
+.wrap #mask{width: 100%; height: 100%; position: fixed; top: 0; left: 0; background: rgba(0, 0, 0, 0.5); display: none; z-index: 999;}
+.wrap #mask.active{display:block;}
+
+.wrap .modal{width:100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1000; display:none; max-width: 90vw;}
+.wrap .modal.modal_450{width:450px;}
+.wrap .modal.modal_650{width:650px;}
+.wrap .modal.active{display:block;}
+.wrap .modal .inner{width:100%; height: 100%;}
+.pc-modal{width:100%; height: 100%; display: block; position: relative;}
+.mo-modal{width:100%; height: 100%; display: none; position: relative;}
+.all-modal{position: relative;}
+
+@media screen and (max-width: 720px){
+    .pc-modal{display:none;}
+    .mo-modal{display:block; overflow: hidden;}           
+}
+
+/* 데스크 7p */
+.modal#hyundai_motostudio_busan{width: 1500px; height: auto;}
+.modal#hyundai_motostudio_busan .busan_btn{position: absolute; width: 34%; top: 67%; left: 13.7%;}
+.modal#hyundai_motostudio_busan .instagram_btn{position: absolute; width: 34%; top:67%; left: 52.3%;}
+.modal#hyundai_motostudio_busan .pc-modal .close_btn{position: absolute; width: 2%; top:14%; left: 100.5%;}
+
+@media screen and (max-width:720px) {
+  .modal#hyundai_motostudio_busan{width:450px;}
+  .modal#hyundai_motostudio_busan .busan_btn{position: absolute; width: 70%; top: 77%; left: 14.7%;}
+  .modal#hyundai_motostudio_busan .instagram_btn{position: absolute; width: 70%; top:83%; left: 14.7%;}
+}
+
+/* 전시 인트로 8p */
+.modal#home_stories .home_stories_text{position: absolute; width: 70%; top:14%; left: 50%; transform: translate(-50%);}
+
+/* 섹션1 SEVEN 9p */
+.modal#section1_ioniq .title_img{top:9%;}
+.modal#section1_ioniq .modal_type{top:9%;}
+.modal#section1_ioniq .modal_content{top:53% !important; height: 38% !important;}
+
+/* 섹션2 homestories 10p */
+.modal#section2_home_stories .title_img{top:9%;}
+.modal#section2_home_stories .modal_type{top:9%;}
+.modal#section2_home_stories .modal_content{top:17% !important; height: 74% !important;}
+
+/* 섹션2.1 resiential 11p */
+.modal#section2-1_resiential .title_img{top:9%;}
+.modal#section2-1_resiential .modal_type{top:9%;}
+.modal#section2-1_resiential .modal_content{top:17% !important; height: 74% !important;}
+
+/* jasper_morrison */
+.modal#jasper_morrison .title_img{top:9%;}
+.modal#jasper_morrison .modal_type{top:9%;}
+.modal#jasper_morrison .modal_content{top:26% !important; height: 65% !important;}
+
+/* IKEA  */
+.modal#ikea .title_img{top:9%;}
+.modal#ikea .modal_type{top:9%;}
+.modal#ikea .modal_content{top:31% !important; height: 60% !important;}
+
+/* ELii */
+.modal#elii .title_img{top:9%;}
+.modal#elii .modal_type{top:9%;}
+.modal#elii .modal_content{top:31% !important; height: 60% !important;}
+
+/* Assemble */
+.modal#assemble .title_img{top:9%;}
+.modal#assemble .modal_type{top:9%;}
+.modal#assemble .modal_content{top:31% !important; height: 60% !important;}
+
+/* Brandlhuber + Emde, Burlon */
+.modal#brandlhuber_emde .title_img{top:9%;}
+.modal#brandlhuber_emde .modal_type{top:9%;}
+.modal#brandlhuber_emde .modal_content{top:26% !important; height: 65% !important;}
+
+/* Karl Lagerfeld,Anderr Putman */
+.modal#karl_lagerfeld .title_img{top:9%;}
+.modal#karl_lagerfeld .modal_type{top:9%;}
+.modal#karl_lagerfeld .modal_content{top:31% !important; height: 60% !important;}
+
+/* Michael Graves */
+.modal#michael_graves .title_img{top:9%;}
+.modal#michael_graves .modal_type{top:9%;}
+.modal#michael_graves .modal_content{top:31% !important; height: 60% !important;}
+
+/* Kisho Kurokawa */
+.modal#kurokawa .title_img{top:9%;}
+.modal#kurokawa .modal_type{top:9%;}
+.modal#kurokawa .modal_content{top:31% !important; height: 60% !important;}
+
+/* Claude Parent */
+.modal#claude_parent .title_img{top:9%;}
+.modal#claude_parent .modal_type{top:9%;}
+.modal#claude_parent .modal_content{top:31% !important; height: 60% !important;}
+
+/* Andy Warhol */
+.modal#andy_warhol .title_img{top:9%;}
+.modal#andy_warhol .modal_type{top:9%;}
+.modal#andy_warhol .modal_content{top:31% !important; height: 60% !important;}
+
+/* stanley_klein */
+.modal#stanley_klein .title_img{top:9%;}
+.modal#stanley_klein .modal_type{top:9%;}
+.modal#stanley_klein .modal_content{top:31% !important; height: 60% !important;}
+
+/* jacqes_tati */
+.modal#jacqes_tati .title_img{top:9%;}
+.modal#jacqes_tati .modal_type{top:9%;}
+.modal#jacqes_tati .modal_content{top:31% !important; height: 60% !important;}
+
+/* lina_bo_bardi */
+.modal#lina_bo_bardi .title_img{top:9%;}
+.modal#lina_bo_bardi .modal_type{top:9%;}
+.modal#lina_bo_bardi .modal_content{top:31% !important; height: 60% !important;}
+
+/* bernard_rudofsky */
+.modal#bernard_rudofsky .title_img{top:9%;}
+.modal#bernard_rudofsky .modal_type{top:9%;}
+.modal#bernard_rudofsky .modal_content{top:31% !important; height: 60% !important;}
+
+/* finn_juhl */
+.modal#finn_juhl .title_img{top:9%;}
+.modal#finn_juhl .modal_type{top:9%;}
+.modal#finn_juhl .modal_content{top:31% !important; height: 60% !important;}
+
+/* josef_frank */
+.modal#josef_frank .title_img{top:9%;}
+.modal#josef_frank .modal_type{top:9%;}
+.modal#josef_frank .modal_content{top:31% !important; height: 60% !important;}
+
+/* cecil_beaton */
+.modal#cecil_beaton .title_img{top:9%;}
+.modal#cecil_beaton .modal_type{top:9%;}
+.modal#cecil_beaton .modal_content{top:31% !important; height: 60% !important;}
+
+/* ludwig_mies_van_der_rohe */
+.modal#ludwig_mies_van_der_rohe .title_img{top:9%;}
+.modal#ludwig_mies_van_der_rohe .modal_type{top:9%;}
+.modal#ludwig_mies_van_der_rohe .modal_content{top:31% !important; height: 60% !important;}
+
+/* adolf_loos */
+.modal#adolf_loos .title_img{top:9%;}
+.modal#adolf_loos .modal_type{top:9%;}
+.modal#adolf_loos .modal_content{top:31% !important; height: 60% !important;}
+
+/* margarete_schutte */
+.modal#margarete_schutte .title_img{top:9%;}
+.modal#margarete_schutte .modal_type{top:9%;}
+.modal#margarete_schutte .modal_content{top:31% !important; height: 60% !important;}
+
+/* ernst_may_und */
+.modal#ernst_may_und .title_img{top:9%;}
+.modal#ernst_may_und .modal_type{top:9%;}
+.modal#ernst_may_und .modal_content{top:31% !important; height: 60% !important;}
+
+/* elsie_de_wolfe */
+.modal#elsie_de_wolfe .title_img{top:9%;}
+.modal#elsie_de_wolfe .modal_type{top:9%;}
+.modal#elsie_de_wolfe .modal_content{top:31% !important; height: 60% !important;}
+
+/* verner_panton */
+.modal#verner_panton .title_img{top:9%;}
+.modal#verner_panton .modal_type{top:9%;}
+.modal#verner_panton .modal_content{top:31% !important; height: 60% !important;}
+
+/* section2.2 */
+.modal#section2-2_interior .title_img{top:9%;}
+.modal#section2-2_interior .modal_type{top:9%;}
+.modal#section2-2_interior .modal_content{top:17% !important; height: 74% !important;}
+
+/* section2.3 */
+.modal#section2-3_nature .title_img{top:9%;}
+.modal#section2-3_nature .modal_type{top:9%;}
+.modal#section2-3_nature .modal_content{top:17% !important; height: 74% !important;}
+
+/* section2.4 */
+.modal#section2-4_birth .title_img{top:9%;}
+.modal#section2-4_birth .modal_type{top:9%;}
+.modal#section2-4_birth .modal_content{top:17% !important; height: 74% !important;}
+
+/* section3_flowing */
+.modal#section3_flowing .title_img{top:9%;}
+.modal#section3_flowing .modal_type{top:9%;}
+.modal#section3_flowing .modal_content{top:36% !important; height: 55% !important;}
+
+/* section4_the_archive */
+.modal#section4_the_archive .title_img{top:30%;}
+
+/* home_stories_museum */
+.modal#home_stories_museum .title_img{top:30%;}
+
+/* 데스크 7p */
+.modal#main_visual{width: 1500px; height: auto;}
+.modal#main_visual .close_btn{width: 2%; top:13%; left: 94.5%;}
+
+
+
+
+
+
+
+
+
+
+/* 공통 CSS */
+
+/* 유튜브 공통 CSS */
+.modal .youtube{width: 100%; position: absolute; top: 16.5%; left: 0; height: 42%;}
+.modal .youtube_play_btn{position: absolute; top: 62%; left: 87%; width: 7.5%; cursor: pointer; z-index: 3;}
+.modal .youtube_pause_btn{position: absolute; top: 62%; left: 78.5%; width: 7.5%; cursor: pointer; z-index: 3;}
+.modal .title_img.youtube_title{top:58.5%; width:81%; height: 41.5%;}
+
+/* 모달 내 타이틀 이미지 공통 CSS */
+.title_img{position: absolute; width: 70%; top:14%; left: 50%; transform: translate(-50%);}
+
+/* 노란색 박스 공통 CSS */
+.yellow_box{position: absolute; width: 121%; top: -5%; left: -17.3%;}
+
+/* 텍스트 전환 섹션 공통 CSS*/
+.modal_type{position: absolute; top: 22.5%; left: 50%; transform: translateX(-50%); display: flex; gap: 100px;}
+.modal_type .modal_button{cursor:pointer;}
+.modal_type .modal_button.active img.lang_off{display:none;}
+.modal_type .modal_button.active img.lang_on{display: block;}
+.modal_type .modal_button img.lang_on{display: none;}
+.modal_type .modal_button img.lang_off{display:block;}
+.modal_type .modal_button img{width: 30px;}
+.modal_content{position: absolute !important; width: 70% !important; height: 59% !important; top: 32% !important; left: 50% !important; transform: translate(-50%); overflow: auto;}
+.modal_content .img_direct_zoom{width: 100%; position: absolute; top: 0;}
+.modal_content img.active{visibility: visible; opacity: 1; }
+.modal_content img{visibility: hidden; opacity: 0;}
+
+/* X버튼 모달 넓이에 따른 공통 CSS */
+.modal .close_btn{position: absolute; width: 7%; top:3%; left: 89%;}
+.modal.modal_450 .close_btn{position: absolute; width: 7%; top:3%; left: 89%;}
+.modal.modal_650 .close_btn{position: absolute; width: 4%; top:3%; left: 92%;}
+
+
+/* 공통 반응형 CSS */
+@media screen and (max-width:720px) {
+  .close_btn{width: 6%;}
+  .wrap .modal .inner{overflow: hidden;}
+}
+
+    

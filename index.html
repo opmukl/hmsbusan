@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMS BUSAN</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/overlayscrollbars/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" href="./css/scroll.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    
+</head>
+<body>
+    <div class="wrap">
+        
+        <style>
+            .text_content{font-weight: 700;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-direction: column;
+                flex-wrap: wrap;
+                gap: 12px;
+                margin-inline: auto;
+                height: 100vh;
+                text-align: center;
+            }
+            
+            .text_content .text p{margin: 10px 0;}
+            .text_content .text.red{color: red;}
+            .text_content .text.blue{color: blue;}
+            .text_content .text.pink{color: pink;}
+            .text_content .text.purple{color: purple;}
+            .text_content .text.gray{color: rgb(165, 165, 165);}
+
+            @media screen and (max-width:720px) {
+                .text_content{flex-wrap: nowrap;}
+            }
+        </style>
+        <!-- 텍스트 -->
+        <div class="text_content">
+            <a class="text text1" href="#"><p>Hyundai Motorstudio Busan</p></a>
+            <a class="text text2 pink" href="#"><p>Home Stories</p></a>
+            <a class="text text3 pink" href="#"><p>Section 1 IONIQ SEVEN Concept</p></a>
+            <a class="text text4 pink" href="#"><p>Section2 Home Stories:100Years, 20 visionary Interiors</p></a>
+            <a class="text text5 pink" href="#"><p>Section2.1 Residential Space as a Resource</p></a>
+
+            <a class="text text6 blue" href="#"><p>Jasper Morrison</p></a>
+            <a class="text text7 blue" href="#"><p>IKEA</p></a>
+            <a class="text text8 blue" href="#"><p>ELii</p></a>
+            <a class="text text9 blue" href="#"><p>Assemble</p></a>
+            <a class="text text10 blue" href="#"><p>Brandlhuber + Emde, Burlon</p></a>
+            <a class="text text11 blue" href="#"><p>Karl Lagerfeld,Anderr Putman</p></a>
+            <a class="text text12 blue" href="#"><p>Michael Graves</p></a>
+            <a class="text text13 blue" href="#"><p>Kisho Kurokawa</p></a>
+            <a class="text text14 blue" href="#"><p>Claude Parent</p></a>
+            <a class="text text15 blue" href="#"><p>Andy Warhol</p></a>
+            <a class="text text16 blue" href="#"><p>Stanley Klein & Andrew Geller</p></a>
+            <a class="text text17 blue" href="#"><p>Jacques Tati & Jacques Lagrange</p></a>
+            <a class="text text18 blue" href="#"><p>Lina Bo Bardi</p></a>
+            <a class="text text19 blue" href="#"><p>Bernard Rudofsky</p></a>
+            <a class="text text20 blue" href="#"><p>Finn Juhl</p></a>
+            <a class="text text21 blue" href="#"><p>Josef Frank, Oskar Wlach</p></a>
+            <a class="text text22 blue" href="#"><p>Cecil Beaton</p></a>
+            <a class="text text23 blue" href="#"><p>Ludwig Mies van der Rohe</p></a>
+            <a class="text text24 blue" href="#"><p>Adolf Loos</p></a>
+            <a class="text text25 blue" href="#"><p>Margarete Schutte-Lihotzky</p></a>
+            <a class="text text26 blue" href="#"><p>Ernst May und andere / and others</p></a>
+            <a class="text text27 blue" href="#"><p>Elsie de Wolfe</p></a>
+            <a class="text text28 blue" href="#"><p>Verner Panton</p></a>
+
+            <a class="text text29 pink" href="#"><p>Section2.2 Interior Disruption</p></a>
+            <a class="text text30 pink" href="#"><p>Section2.3 Nature and Technology</p></a>
+            <a class="text text31 pink" href="#"><p>Section2.4 The Birth of Modern Interiors</p></a>
+
+            <a class="text text32 red" href="#"><p>J Morrison Slideshow</p></a>
+            <a class="text text33 red" href="#"><p>(500) Days of Summer</p></a>
+            <a class="text text34 red" href="#"><p>Production of fireplace suurounds</p></a>
+            <a class="text text35 red" href="#"><p>Yojigen Poketto</p></a>
+            <a class="text text36 red" href="#"><p>Themroc</p></a>
+            <a class="text text37 red" href="#"><p>Andy Warhol's Factory People</p></a>
+            <a class="text text38 red" href="#"><p>NBC News Report on the American National Exhibition</p></a>
+            <a class="text text39 red" href="#"><p>Nixon and Khrushchev in the Ampex TV studio</p></a>
+            <a class="text text40 red" href="#"><p>Mon Oncle</p></a>
+            <a class="text text41 red" href="#"><p>Die Frankfurter Kuche</p></a>
+            <a class="text text42 red" href="#"><p>Under a Flowing Feild By Studio Swine</p></a>
+            <a class="text text43 red" href="#"><p>Home Stories Making of Exhibition Video</p></a>
+
+            <a class="text text44 pink" href="#"><p>Section3 Under a Flowing Field</p></a>
+
+            <a class="text text45 purple" href="#"><p>Section4 The Archive Lounge</p></a>
+            <a class="text text46 purple" href="#"><p>Home Stories with the Vitra Design Museum</p></a>
+
+            <a class="text text47" href="#"><p>메인 비쥬얼 모달</p></a>
+
+            <a class="text gray" href="#"><p>제작 중..</p></a>
+            <a class="text gray" href="#"><p>제작 중..</p></a>
+            <a class="text gray" href="#"><p>제작 중..</p></a>
+            <a class="text gray" href="#"><p>제작 중..</p></a>
+            
+
+
+
+            
+        </div>
+        <!-- 텍스트 -->
+
+        <div id="mask"></div>
+
+        <div class="modal" id="hyundai_motostudio_busan">
+            <div class="inner">
+                <div class="pc-modal">
+                    <img src="./img/hyundai_motostudio_busan_pc.svg" alt="">
+                    <a class="busan_btn" href="#"><img src="./img/busan_btn.svg" alt=""></a>
+                    <a class="instagram_btn" href="#"><img src="./img/instagram_btn.svg" alt=""></a>
+                    <a class="close_btn" href="#"><img src="./img/close_btn_pc.svg" alt=""></a>
+                </div>
+                <div class="mo-modal">
+                    <img src="./img/hyundai_motostudio_busan_mo.svg" alt="">
+                    <a class="busan_btn" href="#"><img src="./img/busan_btn.svg" alt=""></a>
+                    <a class="instagram_btn" href="#"><img src="./img/instagram_btn.svg" alt=""></a>
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_450" id="home_stories">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background.svg" alt="">
+                    <img class="yellow_box" src="./img/homestories_yello_box.svg" alt="">
+                    <img class="title_img" src="./img/home_stories_text.svg" alt="">
+                    <div class="modal_type">
+                        <div class="modal_button active" data-lang="kor">
+                            <img class="lang_off" src="./img/kor_small.svg" alt="">
+                            <img class="lang_on" src="./img/kor_big.svg" alt="">
+                        </div>
+                        <div class="modal_button" data-lang="eng">
+                            <img class="lang_off" src="./img/eng_small.svg" alt="">
+                            <img class="lang_on" src="./img/eng_big.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="modal_content scroll-container">
+                        <img class="img_direct_zoom active" data-type="kor" src="./img/home_stories_kor_txt.svg" alt="">
+                        <img class="img_direct_zoom" data-type="eng" src="./img/home_stories_eng_txt.svg" alt="">
+                    </div>
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_450" id="section1_ioniq">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background.svg" alt="">
+                    <img class="yellow_box" src="./img/homestories_yello_box.svg" alt="">
+                    <img class="title_img" src="./img/section1_seven_tit.svg" alt="">
+                    <div class="modal_type">
+                        <div class="modal_button active" data-lang="kor">
+                            <img class="lang_off" src="./img/kor_small.svg" alt="">
+                            <img class="lang_on" src="./img/kor_big.svg" alt="">
+                        </div>
+                        <div class="modal_button" data-lang="eng">
+                            <img class="lang_off" src="./img/eng_small.svg" alt="">
+                            <img class="lang_on" src="./img/eng_big.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="modal_content scroll-container">
+                        <img class="img_direct_zoom active" data-type="kor" src="./img/section_ioniq_kor_txt.svg" alt="">
+                        <img class="img_direct_zoom" data-type="eng" src="./img/section_ioniq_eng_txt.svg" alt="">
+                    </div>
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_450" id="section2_home_stories">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background.svg" alt="">
+                    <img class="yellow_box" src="./img/homestories_yello_box.svg" alt="">
+                    <img class="title_img" src="./img/line.svg" alt="">
+                    <div class="modal_type">
+                        <div class="modal_button active" data-lang="kor">
+                            <img class="lang_off" src="./img/kor_small.svg" alt="">
+                            <img class="lang_on" src="./img/kor_big.svg" alt="">
+                        </div>
+                        <div class="modal_button" data-lang="eng">
+                            <img class="lang_off" src="./img/eng_small.svg" alt="">
+                            <img class="lang_on" src="./img/eng_big.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="modal_content scroll-container">
+                        <img class="img_direct_zoom active" data-type="kor" src="./img/section2_home_stories_kor_txt.svg" alt="">
+                        <img class="img_direct_zoom" data-type="eng" src="./img/section2_home_stories_eng_txt.svg" alt="">
+                    </div>
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_450" id="section2-1_resiential">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background.svg" alt="">
+                    <img class="yellow_box" src="./img/homestories_yello_box.svg" alt="">
+                    <img class="title_img" src="./img/line.svg" alt="">
+                    <div class="modal_type">
+                        <div class="modal_button active" data-lang="kor">
+                            <img class="lang_off" src="./img/kor_small.svg" alt="">
+                            <img class="lang_on" src="./img/kor_big.svg" alt="">
+                        </div>
+                        <div class="modal_button" data-lang="eng">
+                            <img class="lang_off" src="./img/eng_small.svg" alt="">
+                            <img class="lang_on" src="./img/eng_big.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="modal_content scroll-container">
+                        <img class="img_direct_zoom active" data-type="kor" src="./img/section2-1_residential_kor_txt.svg" alt="">
+                        <img class="img_direct_zoom" data-type="eng" src="./img/section2-1_residential_eng_txt.svg" alt="">
+                    </div>
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_450" id="jasper_morrison">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_yellow.svg" alt="">
+                    <img class="title_img" src="./img/title_01.svg" alt="">
+                    <div class="modal_content scroll-container">
+                        <img class="img_direct_zoom active" src="./img/text_01.svg" alt="">
+                    </div>
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_450" id="ikea">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_yellow.svg" alt="">
+                    <img class="title_img" src="./img/title_02.svg" alt="">
+                    <div class="modal_content scroll-container">
+                        <img class="img_direct_zoom active" src="./img/text_02.svg" alt="">
+                    </div>
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_450" id="elii">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_yellow.svg" alt="">
+                    <img class="title_img" src="./img/title_03.svg" alt="">
+                    <div class="modal_content scroll-container">
+                        <img class="img_direct_zoom active" src="./img/text_03.svg" alt="">
+                    </div>
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_450" id="assemble">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_yellow.svg" alt="">
+                    <img class="title_img" src="./img/title_04.svg" alt="">
+                    <div class="modal_content scroll-container">
+                        <img class="img_direct_zoom active" src="./img/text_04.svg" alt="">
+                    </div>
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_450" id="brandlhuber_emde">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_yellow.svg" alt="">
+                    <img class="title_img" src="./img/title_05.svg" alt="">
+                    <div class="modal_content scroll-container">
+                        <img class="img_direct_zoom active" src="./img/text_05.svg" alt="">
+                    </div>
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_450" id="karl_lagerfeld">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_yellow.svg" alt="">
+                    <img class="title_img" src="./img/title_06.svg" alt="">
+                    <div class="modal_content scroll-container">
+                        <img class="img_direct_zoom active" src="./img/text_06.svg" alt="">
+                    </div>
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_450" id="michael_graves">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_yellow.svg" alt="">
+                    <img class="title_img" src="./img/title_07.svg" alt="">
+                    <div class="modal_content scroll-container">
+                        <img class="img_direct_zoom active" src="./img/text_07.svg" alt="">
+                    </div>
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_450" id="kurokawa">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_yellow.svg" alt="">
+                    <img class="title_img" src="./img/title_08.svg" alt="">
+                    <div class="modal_content scroll-container">
+                        <img class="img_direct_zoom active" src="./img/text_08.svg" alt="">
+                    </div>
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_450" id="claude_parent">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_yellow.svg" alt="">
+                    <img class="title_img" src="./img/title_09.svg" alt="">
+                    <div class="modal_content scroll-container">
+                        <img class="img_direct_zoom active" src="./img/text_09.svg" alt="">
+                    </div>
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_450" id="andy_warhol">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_yellow.svg" alt="">
+                    <img class="title_img" src="./img/title_10.svg" alt="">
+                    <div class="modal_content scroll-container">
+                        <img class="img_direct_zoom active" src="./img/text_10.svg" alt="">
+                    </div>
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_450" id="stanley_klein">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_yellow.svg" alt="">
+                    <img class="title_img" src="./img/title_11.svg" alt="">
+                    <div class="modal_content scroll-container">
+                        <img class="img_direct_zoom active" src="./img/text_11.svg" alt="">
+                    </div>
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_450" id="jacqes_tati">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_yellow.svg" alt="">
+                    <img class="title_img" src="./img/title_12.svg" alt="">
+                    <div class="modal_content scroll-container">
+                        <img class="img_direct_zoom active" src="./img/text_12.svg" alt="">
+                    </div>
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_450" id="lina_bo_bardi">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_yellow.svg" alt="">
+                    <img class="title_img" src="./img/title_13.svg" alt="">
+                    <div class="modal_content scroll-container">
+                        <img class="img_direct_zoom active" src="./img/text_13.svg" alt="">
+                    </div>
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_450" id="bernard_rudofsky">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_yellow.svg" alt="">
+                    <img class="title_img" src="./img/title_14.svg" alt="">
+                    <div class="modal_content scroll-container">
+                        <img class="img_direct_zoom active" src="./img/text_14.svg" alt="">
+                    </div>
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_450" id="finn_juhl">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_yellow.svg" alt="">
+                    <img class="title_img" src="./img/title_15.svg" alt="">
+                    <div class="modal_content scroll-container">
+                        <img class="img_direct_zoom active" src="./img/text_15.svg" alt="">
+                    </div>
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_450" id="josef_frank">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_yellow.svg" alt="">
+                    <img class="title_img" src="./img/title_16.svg" alt="">
+                    <div class="modal_content scroll-container">
+                        <img class="img_direct_zoom active" src="./img/text_16.svg" alt="">
+                    </div>
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_450" id="cecil_beaton">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_yellow.svg" alt="">
+                    <img class="title_img" src="./img/title_17.svg" alt="">
+                    <div class="modal_content scroll-container">
+                        <img class="img_direct_zoom active" src="./img/text_17.svg" alt="">
+                    </div>
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_450" id="ludwig_mies_van_der_rohe">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_yellow.svg" alt="">
+                    <img class="title_img" src="./img/title_18.svg" alt="">
+                    <div class="modal_content scroll-container">
+                        <img class="img_direct_zoom active" src="./img/text_18.svg" alt="">
+                    </div>
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_450" id="adolf_loos">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_yellow.svg" alt="">
+                    <img class="title_img" src="./img/title_19.svg" alt="">
+                    <div class="modal_content scroll-container">
+                        <img class="img_direct_zoom active" src="./img/text_19.svg" alt="">
+                    </div>
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_450" id="margarete_schutte">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_yellow.svg" alt="">
+                    <img class="title_img" src="./img/title_20.svg" alt="">
+                    <div class="modal_content scroll-container">
+                        <img class="img_direct_zoom active" src="./img/text_20.svg" alt="">
+                    </div>
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_450" id="ernst_may_und">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_yellow.svg" alt="">
+                    <img class="title_img" src="./img/title_21.svg" alt="">
+                    <div class="modal_content scroll-container">
+                        <img class="img_direct_zoom active" src="./img/text_21.svg" alt="">
+                    </div>
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_450" id="elsie_de_wolfe">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_yellow.svg" alt="">
+                    <img class="title_img" src="./img/title_22.svg" alt="">
+                    <div class="modal_content scroll-container">
+                        <img class="img_direct_zoom active" src="./img/text_22.svg" alt="">
+                    </div>
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_450" id="verner_panton">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_yellow.svg" alt="">
+                    <img class="title_img" src="./img/title_23.svg" alt="">
+                    <div class="modal_content scroll-container">
+                        <img class="img_direct_zoom active" src="./img/text_23.svg" alt="">
+                    </div>
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_450" id="section2-2_interior">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background.svg" alt="">
+                    <img class="yellow_box" src="./img/homestories_yello_box.svg" alt="">
+                    <img class="title_img" src="./img/line.svg" alt="">
+                    <div class="modal_type">
+                        <div class="modal_button active" data-lang="kor">
+                            <img class="lang_off" src="./img/kor_small.svg" alt="">
+                            <img class="lang_on" src="./img/kor_big.svg" alt="">
+                        </div>
+                        <div class="modal_button" data-lang="eng">
+                            <img class="lang_off" src="./img/eng_small.svg" alt="">
+                            <img class="lang_on" src="./img/eng_big.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="modal_content scroll-container">
+                        <img class="img_direct_zoom active" data-type="kor" src="./img/section2-2_kor.svg" alt="">
+                        <img class="img_direct_zoom" data-type="eng" src="./img/section2-2_eng.svg" alt="">
+                    </div>
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_450" id="section2-3_nature">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background.svg" alt="">
+                    <img class="yellow_box" src="./img/homestories_yello_box.svg" alt="">
+                    <img class="title_img" src="./img/line.svg" alt="">
+                    <div class="modal_type">
+                        <div class="modal_button active" data-lang="kor">
+                            <img class="lang_off" src="./img/kor_small.svg" alt="">
+                            <img class="lang_on" src="./img/kor_big.svg" alt="">
+                        </div>
+                        <div class="modal_button" data-lang="eng">
+                            <img class="lang_off" src="./img/eng_small.svg" alt="">
+                            <img class="lang_on" src="./img/eng_big.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="modal_content scroll-container">
+                        <img class="img_direct_zoom active" data-type="kor" src="./img/section2-3_kor.svg" alt="">
+                        <img class="img_direct_zoom" data-type="eng" src="./img/section2-3_eng.svg" alt="">
+                    </div>
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_450" id="section2-4_birth">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background.svg" alt="">
+                    <img class="yellow_box" src="./img/homestories_yello_box.svg" alt="">
+                    <img class="title_img" src="./img/line.svg" alt="">
+                    <div class="modal_type">
+                        <div class="modal_button active" data-lang="kor">
+                            <img class="lang_off" src="./img/kor_small.svg" alt="">
+                            <img class="lang_on" src="./img/kor_big.svg" alt="">
+                        </div>
+                        <div class="modal_button" data-lang="eng">
+                            <img class="lang_off" src="./img/eng_small.svg" alt="">
+                            <img class="lang_on" src="./img/eng_big.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="modal_content scroll-container">
+                        <img class="img_direct_zoom active" data-type="kor" src="./img/section2-4_kor.svg" alt="">
+                        <img class="img_direct_zoom" data-type="eng" src="./img/section2-4_eng.svg" alt="">
+                    </div>
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_650" id="jmorrison_video">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_video.svg" alt="">
+                    <div class="youtube" id="player1"></div>
+                    <img src="./img/youtube_play_btn.svg"  class="youtube_play_btn playButton" data-video-index="0" alt="Play Button">
+                    <img src="./img/youtube_pause_btn.svg" class="youtube_pause_btn pauseButton" data-video-index="0" alt="Pause Button">
+                    <img class="title_img youtube_title" src="./img/youtube_text_01.svg" alt="">
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_650" id="days_of_summer_video">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_video.svg" alt="">
+                    <div class="youtube" id="player2"></div>
+                    <img src="./img/youtube_play_btn.svg"  class="youtube_play_btn playButton" alt="Play Button" data-video-index="1">
+                    <img src="./img/youtube_pause_btn.svg" class="youtube_pause_btn pauseButton" alt="Pause Button" data-video-index="1">
+                    <img class="title_img youtube_title" src="./img/youtube_text_02.svg" alt="">
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_650" id="fireplace_video">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_video.svg" alt="">
+                    <div class="youtube" id="player3"></div>
+                    <img src="./img/youtube_play_btn.svg"  class="youtube_play_btn playButton" alt="Play Button" data-video-index="2">
+                    <img src="./img/youtube_pause_btn.svg" class="youtube_pause_btn pauseButton" alt="Pause Button" data-video-index="2">
+                    <img class="title_img youtube_title" src="./img/youtube_text_03.svg" alt="">
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_650" id="yojigen_video">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_video.svg" alt="">
+                    <div class="youtube" id="player4"></div>
+                    <img src="./img/youtube_play_btn.svg"  class="youtube_play_btn playButton" alt="Play Button" data-video-index="3">
+                    <img src="./img/youtube_pause_btn.svg" class="youtube_pause_btn pauseButton" alt="Pause Button" data-video-index="3">
+                    <img class="title_img youtube_title" src="./img/youtube_text_04.svg" alt="">
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_650" id="themroc_video">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_video.svg" alt="">
+                    <div class="youtube" id="player5"></div>
+                    <img src="./img/youtube_play_btn.svg"  class="youtube_play_btn playButton" alt="Play Button" data-video-index="4">
+                    <img src="./img/youtube_pause_btn.svg" class="youtube_pause_btn pauseButton" alt="Pause Button" data-video-index="4">
+                    <img class="title_img youtube_title" src="./img/youtube_text_05.svg" alt="">
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_650" id="andy_warhol_video">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_video.svg" alt="">
+                    <div class="youtube" id="player6"></div>
+                    <img src="./img/youtube_play_btn.svg"  class="youtube_play_btn playButton" alt="Play Button" data-video-index="5">
+                    <img src="./img/youtube_pause_btn.svg" class="youtube_pause_btn pauseButton" alt="Pause Button" data-video-index="5">
+                    <img class="title_img youtube_title" src="./img/youtube_text_06.svg" alt="">
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_650" id="nbc_video">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_video.svg" alt="">
+                    <div class="youtube" id="player7"></div>
+                    <img src="./img/youtube_play_btn.svg"  class="youtube_play_btn playButton" alt="Play Button" data-video-index="6">
+                    <img src="./img/youtube_pause_btn.svg" class="youtube_pause_btn pauseButton" alt="Pause Button" data-video-index="6">
+                    <img class="title_img youtube_title" src="./img/youtube_text_07.svg" alt="">
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_650" id="nixon_video">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_video_long.svg" alt="">
+                    <div class="youtube" id="player8"></div>
+                    <img src="./img/youtube_play_btn.svg"  class="youtube_play_btn playButton" alt="Play Button" data-video-index="7">
+                    <img src="./img/youtube_pause_btn.svg" class="youtube_pause_btn pauseButton" alt="Pause Button" data-video-index="7">
+                    <img class="title_img youtube_title" src="./img/youtube_text_08.svg" alt="">
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_650" id="mon_oncle_video">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_video.svg" alt="">
+                    <div class="youtube" id="player9"></div>
+                    <img src="./img/youtube_play_btn.svg"  class="youtube_play_btn playButton" alt="Play Button" data-video-index="8">
+                    <img src="./img/youtube_pause_btn.svg" class="youtube_pause_btn pauseButton" alt="Pause Button" data-video-index="8">
+                    <img class="title_img youtube_title" src="./img/youtube_text_09.svg" alt="">
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_650" id="die_frankfurter_video">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_video.svg" alt="">
+                    <div class="youtube" id="player10"></div>
+                    <img src="./img/youtube_play_btn.svg"  class="youtube_play_btn playButton" alt="Play Button" data-video-index="9">
+                    <img src="./img/youtube_pause_btn.svg" class="youtube_pause_btn pauseButton" alt="Pause Button" data-video-index="9">
+                    <img class="title_img youtube_title" src="./img/youtube_text_10.svg" alt="">
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_650" id="under_a_flowing_video">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_video.svg" alt="">
+                    <div class="youtube" id="player11"></div>
+                    <img src="./img/youtube_play_btn.svg"  class="youtube_play_btn playButton" alt="Play Button" data-video-index="10">
+                    <img src="./img/youtube_pause_btn.svg" class="youtube_pause_btn pauseButton" alt="Pause Button" data-video-index="10">
+                    <img class="title_img youtube_title" src="./img/youtube_text_11.svg" alt="">
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_650" id="home_stories_video">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_video.svg" alt="">
+                    <div class="youtube" id="player12"></div>
+                    <img src="./img/youtube_play_btn.svg"  class="youtube_play_btn playButton" alt="Play Button" data-video-index="11">
+                    <img src="./img/youtube_pause_btn.svg" class="youtube_pause_btn pauseButton" alt="Pause Button" data-video-index="11">
+                    <img class="title_img youtube_title" src="./img/youtube_text_12.svg" alt="">
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_450" id="section3_flowing">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background.svg" alt="">
+                    <img class="yellow_box" src="./img/homestories_yello_box.svg" alt="">
+                    <img class="title_img" src="./img/section3_flowing_tit.svg" alt="">
+                    <div class="modal_type">
+                        <div class="modal_button active" data-lang="kor">
+                            <img class="lang_off" src="./img/kor_small.svg" alt="">
+                            <img class="lang_on" src="./img/kor_big.svg" alt="">
+                        </div>
+                        <div class="modal_button" data-lang="eng">
+                            <img class="lang_off" src="./img/eng_small.svg" alt="">
+                            <img class="lang_on" src="./img/eng_big.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="modal_content scroll-container">
+                        <img class="img_direct_zoom active" data-type="kor" src="./img/section_flowing_kor_txt.svg" alt="">
+                        <img class="img_direct_zoom" data-type="eng" src="./img/section_flowing_eng_txt.svg" alt="">
+                    </div>
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_650" id="section4_the_archive">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_black.svg" alt="">
+                    <img class="title_img" src="./img/section4_tit_01.svg" alt="">
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal_650" id="home_stories_museum">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_background_black.svg" alt="">
+                    <img class="title_img" src="./img/section4_tit_02.svg" alt="">
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="main_visual">
+            <div class="inner">
+                <div class="all-modal">
+                    <img src="./img/main_visual_modal.svg" alt="">
+                    <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            var players = []; // 플레이어 객체를 담을 배열
+
+            function onYouTubeIframeAPIReady() {
+                // 플레이어 객체를 배열에 추가
+                players.push(new YT.Player('player1', { height: '', width: '', videoId: 'eKqa-866j28' }));
+                players.push(new YT.Player('player2', { height: '', width: '', videoId: 'ejOBSXYgf6Q' }));
+                players.push(new YT.Player('player3', { height: '', width: '', videoId: '699spYeOEs8' }));
+                players.push(new YT.Player('player4', { height: '', width: '', videoId: 'TsiFS-D5sC4' }));
+                players.push(new YT.Player('player5', { height: '', width: '', videoId: '3q1wQHlTyYo' }));
+                players.push(new YT.Player('player6', { height: '', width: '', videoId: 'Z1g-1keW8JM' }));
+                players.push(new YT.Player('player7', { height: '', width: '', videoId: 'IhFu7J383-k' }));
+                players.push(new YT.Player('player8', { height: '', width: '', videoId: 'wNdIExYoAV0' }));
+                players.push(new YT.Player('player9', { height: '', width: '', videoId: 'FwY73fobvjA' }));
+                players.push(new YT.Player('player10', { height: '', width: '', videoId: '_1N8PFSCbPc' }));
+                players.push(new YT.Player('player11', { height: '', width: '', videoId: 'xRqPBkklonM' }));
+                players.push(new YT.Player('player12', { height: '', width: '', videoId: 'tnwM9Pe_6NQ' }));
+                // 필요한 만큼 플레이어 객체를 추가할 수 있습니다.
+
+                // 플레이어 객체가 모두 준비되면 호출될 콜백 함수
+                onPlayersReady();
+            }
+            
+            var playButtons = document.getElementsByClassName("playButton");
+            var pauseButtons = document.getElementsByClassName("pauseButton");
+            var mask = document.getElementById("mask");
+            var closeBtns = document.querySelectorAll(".close_btn");
+
+            function onPlayersReady() {
+                for (var i = 0; i < playButtons.length; i++) {
+                    (function(videoIndex) {
+                        playButtons[videoIndex].addEventListener("click", function() {
+                            playVideo(videoIndex);
+                        });
+
+                        pauseButtons[videoIndex].addEventListener("click", function() {
+                            pauseVideo(videoIndex);
+                        });
+                    })(i);
+                }
+                mask.addEventListener("click", function() {
+                    pauseAllVideos();
+                    //resetAllVideos();
+                });
+                closeBtns.forEach(function(closeBtn) {
+                    closeBtn.addEventListener("click", function() {
+                        pauseAllVideos();
+                        //resetAllVideos();
+                    });
+                });
+            }
+            function playVideo(videoIndex) {
+                players[videoIndex].playVideo();
+            }
+
+            function pauseVideo(videoIndex) {
+                players[videoIndex].pauseVideo();
+            }
+            function pauseAllVideos() {
+                for (var i = 0; i < players.length; i++) {
+                    players[i].pauseVideo();
+                }
+            }
+
+            function resetAllVideos() {
+                for (var i = 0; i < players.length; i++) {
+                    players[i].seekTo(0);
+                }
+            }
+
+        </script>
+
+
+
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/overlayscrollbars/js/OverlayScrollbars.min.js"></script>    
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

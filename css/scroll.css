@@ -1,0 +1,37 @@
+.scroll-container {
+    overflow: auto;
+  }
+  
+  .os-theme-dark>.os-scrollbar>.os-scrollbar-track {
+    background-color: #252525 !important;
+    border-radius: 4px !important;
+  }
+  
+  .os-theme-dark>.os-scrollbar>.os-scrollbar-handle {
+    background-color: #808080 !important;
+    border-radius: 4px !important;
+  }
+  .os-scrollbar-auto-hidden{
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  .os-theme-dark>.os-scrollbar>.os-scrollbar-track{
+    background-color: transparent !important;
+  }
+  .os-theme-dark>.os-scrollbar>.os-scrollbar-track>.os-scrollbar-handle{
+    background-color: #000 !important;
+    border-radius: 0 !important;
+  }
+  
+  @media screen and (max-width:720px) {
+    .os-theme-dark>.os-scrollbar-vertical{width: 9px !important;}
+    .ps__thumb-y{width:5px !important;}
+    .ps__rail-y{width:5px !important;}
+    .ps__rail-y.ps--clicking .ps__thumb-y, .ps__rail-y:focus>.ps__thumb-y, .ps__rail-y:hover>.ps__thumb-y{width: 5px !important;}
+  }
+  .os-host-overflow{
+    overflow: visible !important;
+  }
+  .os-host-resize-disabled.os-host-scrollbar-horizontal-hidden>.os-scrollbar-vertical{
+    right:-12%;
+  }
