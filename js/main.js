@@ -316,6 +316,16 @@
           $(".modal").removeClass("active");
         }
       });
+      // 모달 초기화 (스크롤 바 상단, 텍스트 국문)
+      $(".text, .modal_button").on({
+        click: function () {
+          $(".modal").find(".os-viewport").scrollTop(0);
+          $(".modal_button[data-lang=kor]").addClass("active");
+          $(".modal_button[data-lang=eng]").removeClass("active");
+          $(".img_direct_zoom[data-type=kor]").addClass("active");
+          $(".img_direct_zoom[data-type=eng]").removeClass("active");
+        }
+      });
     },
     // 한, 영문 텍스트 변환 스크립트
     section2: function () {

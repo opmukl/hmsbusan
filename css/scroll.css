@@ -40,6 +40,9 @@
   height: 1.2px;
   background: #000;
 }
+.os-scrollbar-unusable {
+  display: none;
+}
 
 @media screen and (max-width: 720px) {
   .os-theme-dark > .os-scrollbar-vertical {

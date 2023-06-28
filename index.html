@@ -123,14 +123,14 @@
         <div class="inner">
           <div class="pc-modal">
             <img src="./img/hyundai_motostudio_busan_pc.svg" alt="" />
-            <a class="busan_btn" href="#"><img src="./img/busan_btn.svg" alt="" /></a>
-            <a class="instagram_btn" href="#"><img src="./img/instagram_btn.svg" alt="" /></a>
+            <a class="busan_btn" href="https://motorstudio.hyundai.com/busan"><img src="./img/busan_btn.svg" alt="" /></a>
+            <a class="instagram_btn" href="https://www.instagram.com/hyundai.motorstudio/"><img src="./img/instagram_btn.svg" alt="" /></a>
             <a class="close_btn" href="#"><img src="./img/close_btn_pc.svg" alt="" /></a>
           </div>
           <div class="mo-modal">
             <img src="./img/hyundai_motostudio_busan_mo.svg" alt="" />
-            <a class="busan_btn" href="#"><img src="./img/busan_btn.svg" alt="" /></a>
-            <a class="instagram_btn" href="#"><img src="./img/instagram_btn.svg" alt="" /></a>
+            <a class="busan_btn" href="https://motorstudio.hyundai.com/busan"><img src="./img/busan_btn.svg" alt="" /></a>
+            <a class="instagram_btn" href="https://www.instagram.com/hyundai.motorstudio/"><img src="./img/instagram_btn.svg" alt="" /></a>
             <a class="close_btn" href="#"><img src="./img/close_btn.svg" alt="" /></a>
           </div>
         </div>
@@ -890,7 +890,7 @@
           </div>
           <div class="all-modal zoom-modal">
             <div class="scroll-container">
-              <img src="./img/home_stories_chronological.svg" class="zoom-img" />
+              <img src="./img/home_stories_chronological.png" class="zoom-img" />
             </div>
             <a class="close_btn zoom_close_btn" href="#"><img src="./img/close_btn.svg" alt="" /></a>
           </div>
@@ -1029,6 +1029,12 @@
                         <img src="./img/door_hanger11.png" alt="" />
                       </picture>
                     </div>
+                    <div class="swiper-slide">
+                      <picture>
+                        <source media="(max-width: 720px)" srcset="./img/door_hanger_mo12.png" />
+                        <img src="./img/door_hanger12.png" alt="" />
+                      </picture>
+                    </div>
                   </div>
                 </div>
                 <button type="button" class="btn_zoom"><img src="./img/plus_ptn.svg" /></button>
@@ -1049,18 +1055,18 @@
 
         function onYouTubeIframeAPIReady() {
           // 플레이어 객체를 배열에 추가
-          players.push(new YT.Player("player1", {height: "", width: "", videoId: "eKqa-866j28"}));
-          players.push(new YT.Player("player2", {height: "", width: "", videoId: "ejOBSXYgf6Q"}));
-          players.push(new YT.Player("player3", {height: "", width: "", videoId: "699spYeOEs8"}));
-          players.push(new YT.Player("player4", {height: "", width: "", videoId: "TsiFS-D5sC4"}));
-          players.push(new YT.Player("player5", {height: "", width: "", videoId: "3q1wQHlTyYo"}));
-          players.push(new YT.Player("player6", {height: "", width: "", videoId: "Z1g-1keW8JM"}));
-          players.push(new YT.Player("player7", {height: "", width: "", videoId: "IhFu7J383-k"}));
-          players.push(new YT.Player("player8", {height: "", width: "", videoId: "wNdIExYoAV0"}));
-          players.push(new YT.Player("player9", {height: "", width: "", videoId: "FwY73fobvjA"}));
-          players.push(new YT.Player("player10", {height: "", width: "", videoId: "_1N8PFSCbPc"}));
-          players.push(new YT.Player("player11", {height: "", width: "", videoId: "xRqPBkklonM"}));
-          players.push(new YT.Player("player12", {height: "", width: "", videoId: "tnwM9Pe_6NQ"}));
+          players.push(new YT.Player("player1", {height: "", width: "", videoId: "wH1yxoF3iu4"}));
+          players.push(new YT.Player("player2", {height: "", width: "", videoId: "h2Ri8OAN0cs"}));
+          players.push(new YT.Player("player3", {height: "", width: "", videoId: "8_aRV5LH6dk"}));
+          players.push(new YT.Player("player4", {height: "", width: "", videoId: "heKaQhx4yr4"}));
+          players.push(new YT.Player("player5", {height: "", width: "", videoId: "irkEe-yWsN8"}));
+          players.push(new YT.Player("player6", {height: "", width: "", videoId: "nIA4DwQYcWA"}));
+          players.push(new YT.Player("player7", {height: "", width: "", videoId: "uMj4R-LAfh8"}));
+          players.push(new YT.Player("player8", {height: "", width: "", videoId: "nz8HK4KdzaM"}));
+          players.push(new YT.Player("player9", {height: "", width: "", videoId: "mDeEpoavvjg"}));
+          players.push(new YT.Player("player10", {height: "", width: "", videoId: "PqvprArBwW0"}));
+          players.push(new YT.Player("player11", {height: "", width: "", videoId: "RahJ0v0Pdag"}));
+          players.push(new YT.Player("player12", {height: "", width: "", videoId: "5DWfRRSKrG8"}));
           // 필요한 만큼 플레이어 객체를 추가할 수 있습니다.
 
           // 플레이어 객체가 모두 준비되면 호출될 콜백 함수
@@ -1085,24 +1091,21 @@
             })(i);
           }
           mask.addEventListener("click", function () {
-            pauseAllVideos();
-            //resetAllVideos();
+            //pauseAllVideos();
+            resetAllVideos();
           });
           closeBtns.forEach(function (closeBtn) {
             closeBtn.addEventListener("click", function () {
-              pauseAllVideos();
-              //resetAllVideos();
+              //pauseAllVideos();
+              resetAllVideos();
             });
           });
         }
         function playVideo(videoIndex) {
-          conosl.loe("playVideo");
           players[videoIndex].playVideo();
         }
 
         function pauseVideo(videoIndex) {
-          conosl.loe("pauseVideo");
-
           players[videoIndex].pauseVideo();
         }
         function pauseAllVideos() {
@@ -1113,7 +1116,9 @@
 
         function resetAllVideos() {
           for (var i = 0; i < players.length; i++) {
-            players[i].seekTo(0);
+            //players[i].seekTo(0);
+            //players[i].loadVideoById();
+            players[i].stopVideo();
           }
         }
 
@@ -1238,38 +1243,30 @@
               slideNextTransitionStart: (swiper) => {
                 $modal.find(".swiper-slide").removeClass("next next-current prev prev-current");
                 $modal.find(".swiper-slide").eq(swiper.realIndex).addClass("next");
-                $modal
-                  .find(".swiper-slide")
-                  .eq(swiper.realIndex - 1)
-                  .addClass("next-current");
+                $modal.find(".swiper-slide").eq(swiper.previousIndex).addClass("next-current");
               },
               slideNextTransitionEnd: (swiper) => {
                 $modal.find(".swiper-slide").removeClass("next");
-                $modal
-                  .find(".swiper-slide")
-                  .eq(swiper.realIndex - 1)
-                  .removeClass("next-current");
+                $modal.find(".swiper-slide").eq(swiper.previousIndex).removeClass("next-current");
               },
               slidePrevTransitionStart: (swiper) => {
+                console.log(swiper.activeIndex);
+                console.log(swiper.previousIndex);
+
                 $modal.find(".swiper-slide").removeClass("next next-current prev prev-current");
-                $modal.find(".swiper-slide").eq(swiper.realIndex).addClass("prev");
-                $modal
-                  .find(".swiper-slide")
-                  .eq(swiper.realIndex + 1)
-                  .addClass("prev-current");
+                $modal.find(".swiper-slide").eq(swiper.activeIndex).addClass("prev");
+                $modal.find(".swiper-slide").eq(swiper.previousIndex).addClass("prev-current");
               },
               slidePrevTransitionEnd: (swiper) => {
-                $modal.find(".swiper-slide").eq(swiper.realIndex).removeClass("prev");
-                $modal
-                  .find(".swiper-slide")
-                  .eq(swiper.realIndex + 1)
-                  .removeClass("prev-current");
+                $modal.find(".swiper-slide").eq(swiper.activeIndex).removeClass("prev");
+                $modal.find(".swiper-slide").eq(swiper.previousIndex).removeClass("prev-current");
               }
             }
           };
 
           if (doorHangerSwiper) doorHangerSwiper.destroy();
           doorHangerSwiper = new Swiper("#door_hanger .swiper-inner", settings);
+          $modal.find(".swiper-slide").removeClass("next next-current prev prev-current");
 
           $("#mask").addClass("active");
           $modal.addClass("active");
